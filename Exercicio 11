@@ -1,0 +1,22 @@
+#Faça um algoritmo para calcular o delta e as raízes de uma equação do 2º grau. Os valores dos coeficientes a, b e c serão lidos.
+
+print("\n********bem vindo*******\n")
+
+a= float(input("digite o valor de A: "))
+b= float(input("digite o valor de B: "))
+c= float(input("digite o valor de C: "))
+
+delta=(b**2)-(4*a*c)
+while(delta<0):
+    print("ERRO: Delta negativo, não consigo calcular as raízes", "\n\nDigite os novos valores para A, B e C")
+    a= float(input("digite o valor de A: "))
+    b= float(input("digite o valor de B: "))
+    c= float(input("digite o valor de C: "))
+
+    delta=(b**2)-(4*a*c)
+
+x1=((-b)+(delta**(1/2)))/(2*a)
+x2=((-b)-(delta**(1/2)))/(2*a)
+print("as duas raizes são:", "\nx1=", x1, "\nx2=", x2)
+
+print("Exit")
